@@ -12,17 +12,17 @@ Use our old friend `create-react-app` to create a react app.
 
 Let's create two components, `House.js` and `HouseList.js`. Be sure to manage your state in App.js.  
 
-In `App.js`, Create 2 properties in state, `fireData` and `currentHouse`. Import all of the firehouses and save them in state as `fireData`. We can find all of the firehouse data in the provided json file `data/firehouse.json`. Leave `currentHouse` as `null` for now. Let's also create a function that selects one firehouse and updates the state `currentHouse`.  
+In `App.js`, Create 2 properties in state, `fireData` and `currentHouse`. Import all of the firehouses and save them in state as `fireData`. We can find all of the firehouse data in the provided json file `firehouse.json`. Leave `currentHouse` as `null` for now. Let's also create a function that selects one firehouse and updates the state `currentHouse`.  
 
 ## Step 3
 
-`House.js` should be a functional component, because it is where we are doing Conditional Rendering. In `House.js`, pass the current house as props down and render it to the component IF there is a `currentHouse`. Else, render the words "Select A House"
+`House.js` should be a component that is meant to display the full details of one fire house. In `House.js`, pass the current house as props down and render it to the component IF there is a `currentHouse`. Else, render the words "Select A House"
 
 ## Step 4
 
-In `HouseList.js` pass the props of all the firehouses and map over them to render a list of every house. 
+In `HouseList.js` pass the props of all the firehouses and map over them to render a list of every house. Only display the "FacilityName" property.
 
-Add an onClick function to each of the mapped elements so that the state of current house is updated to the firehouse that is clicked. Don't forget to bind keyword `this` when you pass down the function from `App.js`
+Add an onClick function to each of the mapped elements so that the state of current house is updated to the firehouse that is clicked. 
 
 ## Step 5
 
